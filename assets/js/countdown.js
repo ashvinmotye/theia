@@ -9,7 +9,7 @@ var minutes = document.getElementById("minutes");
 var seconds = document.getElementById("seconds");
 
 // DEADLINE
-var deadline = new Date("May 03, 2017 00:00:00");
+var deadline = new Date("June 01, 2019 00:00:00");
 
 // TIMER FUNCTION
 function timer(flipCard) {
