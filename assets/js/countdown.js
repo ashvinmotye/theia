@@ -1,6 +1,6 @@
 window.onload = function() {
 	timer(flipCard);
-}
+};
 
 // SELECTING THE DIVS
 var days = document.getElementById("days");
