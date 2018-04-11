@@ -51,3 +51,19 @@ $(document).ready(function(){
 		return false;
 	});
 });
+
+var menuItems = document.querySelectorAll('a.scroll');
+
+for(var i=0; i<menuItems.length; i++) {
+	menuItems[i].addEventListener('click', scrollToSection);
+}
+
+function scrollToSection() {
+	var section = this.dataset.scrollto;
+	var sectionId = '#'+section;
+	var el = document.querySelector(sectionId);
+
+	el.scrollIntoView({ behavior: "smooth", block: "start" });
+
+	return false;
+}
