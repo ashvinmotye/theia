@@ -13,6 +13,8 @@ $(document).ready(function(){
 			'scrollTop' : $('#home').offset().top
 		}, 300);
 
+		document.querySelector('#home').scrollIntoView({ behavior: "smooth", block: "start" });
+
 		return false;
 	});
 
